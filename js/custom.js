@@ -1,0 +1,2 @@
+$('.faqs-title a').on('click',function(){$("#faqs").slideToggle("slow");$('html,body').animate({scrollTop:$("#faqs").offset().top-50},'slow');});$('.gotoform').on('click',function(){$('html,body').animate({scrollTop:$(".packages-row").offset().top},'slow');});function toggleIcon(e){jQuery(e.target).prev(".panel-heading").find(".more-less").toggleClass("fa-caret-left fa-caret-down")}
+$(".panel-group").on("hidden.bs.collapse",toggleIcon),$(".panel-group").on("shown.bs.collapse",toggleIcon);
